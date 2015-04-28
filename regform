@@ -1,0 +1,251 @@
+<html lang="en">
+	<head  profile="http://www.w3.org/2005/10/profile">
+		<link rel="icon" type="image/png" href="icon.png">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		
+		<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<title>Application</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
+		<link href="js/bootstrap.css" rel="stylesheet" type="text/css"/>
+		<link href="js/bootstrap-responsive.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+	
+		<div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav nav-justified">
+          <li><a href="index.html#section1">Home</a></li>
+          <li><a href="index.html#section2">Who We Are</a></li>
+          <li>
+            <a href="index.html#section3">Subjects </a>
+ 
+          </li>
+          <li><a href="index.html#section4">Become a Tutor</a></li>
+		  <li><a href="index.html#section4">Need a Tutor</a></li>
+          <li><a href="index.html#section5">Contact</a></li>
+		 
+		  
+        </ul>
+		
+      </div><!--/.nav-collapse -->
+    </div><!--/.container -->
+</div><!--/.navbar -->
+
+<!-- Registration form -->
+	<div class="container" style="height:auto;">
+	
+	<ul class="nav nav-tabs" data-tabs="tabs" style="margin-bottom: 30px;">
+                <li class="active"><a href="#home" data-toggle="tab">Personal Details</a></li>
+				<li><a href="#loc" data-toggle="tab">Location</a></li>
+                <li><a href="#tut" data-toggle="tab">Tutoring Subjects</a></li>
+				<li><a href="#about" data-toggle="tab">About You</a></li>
+				<li><a href="#docs" data-toggle="tab">Documentation</a></li>
+				<li><a href="#rev" data-toggle="tab">Review</a></li>
+	
+
+	</ul>
+	
+	 <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="home">
+                  <p>
+				  <div class="row">
+							<label for="firstname" class="col-sm-2">
+							First Name:
+							</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
+							</div>
+							
+							<label style="align:right;" for="lastname" class="col-sm-2">
+							Last Name:
+							</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
+							</div>
+							<div class="col-sm-1">
+							<i class="fa fa-lock fa-2x"></i>
+							</div>
+				  </div>
+				  <div class="row col-sm-12" ><p><br></p></div>
+				  <div class="row">
+							<div>
+							<label for="emailaddress" class="col-sm-2">
+								Email address:
+							</label>
+							<div class="col-sm-4">
+								<input type="email" class="form-control" id="emailaddress" placeholder="Enter email address">
+								<p class="help-block">
+									Example: yourname@domain.com
+								</p>
+							</div>
+							 
+						</div>
+						
+						<label for="phonenumber" class="col-sm-2">
+							Phone Number:
+							</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+							</div>
+							<div class="col-sm-1">
+								<i class="fa fa-lock fa-2x"></i>
+							</div>
+				  
+				  
+				  </div>
+				  <div class="row col-sm-12" ><p><br></p></div>
+				  <div class="row">
+							<label for="id" class="col-sm-2">
+							ID/Passport Number:
+							</label>
+							<div class="col-sm-4">
+								<input type="text" class="form-control" id="idnum" placeholder="Enter ID/Passport number">
+							</div>
+							
+							<label for="country" class="col-sm-2">
+									Country of origin:
+								</label>
+								<div class="col-sm-4">
+									<select name="country" id="country" class="form-control">
+										<option>--Please Select--</option>
+										<option>Botswana</option>
+										<option>Lesotho</option>
+										<option>Namibia</option>
+										<option>South Africa</option>
+										<option>Swaziland</option>
+										<option>Zambia</option>
+										<option>Zimbabwe</option>
+									</select>
+								</div>
+				  </div>
+				  <div class="row col-sm-12" ><p><br></p></div>
+					 <div class="row">
+							<label for="sex" class="col-sm-2">
+								Gender:
+							</label>
+							<div class="col-sm-4">
+								<label class="radio">
+									<input type="radio" name="sex" id="sex" value="male" checked>
+									Male
+								</label>
+								<label class="radio">
+									<input type="radio" name="sex" id="Radio1" value="female">
+									Female
+								</label>
+							</div>
+							
+								<label for="uploadimage" class="col-sm-2">
+									Upload Image:
+								</label>
+								<div class="col-sm-4">
+									<input type="file" name="uploadimage" id="uploadimage">
+									<p class="help-block">
+										Allowed formats: jpeg, jpg, gif, png
+									</p>
+								</div>  	
+							
+				  </div>	
+				 <div class="row col-sm-12" ><p><br></p></div>
+				  <div class="row">
+							<label for="about" class="col-sm-2">
+									How did you hear about a us:
+								</label>
+								<div class="col-sm-4">
+									<select name="country" id="about" class="form-control">
+										<option>--Please Select--</option>
+										<option>Facebook</option>
+										<option>Flyer</option>
+										<option>Google</option>
+										<option>Twitter</option>
+										<option>Gumtree</option>
+										<option>Poster</option>
+									</select>
+								</div>
+							
+							<label for="country" class="col-sm-2">
+									Which mode of transport do you use:
+								</label>
+								<div class="col-sm-4">
+									<select name="country" id="country" class="form-control">
+										<option>--Please Select--</option>
+										<option>private car</option>
+										<option>public transport</option>
+										<option>walking</option>
+										
+									</select>
+								</div>
+					<div class="row col-sm-12" ><p><br></p></div>
+					<div class="row col-sm-12" ><p><br></p></div>
+							<div class="row">
+								<div class="col-md-11">
+								</div>
+								<div class="col-md-1">
+									<button type="submit" class="btn btn-info">
+										Next
+									</button>
+								</div>
+							</div>
+				  </div>
+					
+				  </p>
+                </div>
+				<div class="tab-pane fade" id="loc">
+                  <p>Current Location</p>
+                </div>
+                <div class="tab-pane fade" id="tut">
+                  <p>Tab 2 Tutoring Subjects</p>
+                </div>
+                <div class="tab-pane fade" id="about">
+                  <p>About You</p>
+                </div>
+                <div class="tab-pane fade" id="docs">
+                  <p>Application Documentation.</p>
+                </div>
+				<div class="tab-pane fade" id="rev">
+                  <p>Review of Application</p>
+                </div>
+              </div>
+	</div>
+<!-- end of reg forms-->
+
+
+<div style="height:auto;" id="footer">
+
+  <div  class="container">
+  
+		<div class="col-sm-0 pull-right">
+
+      
+    
+      <address>
+        <strong>Email Us</strong><br>
+        <a href="mailto:#">info@learnsmart.co.za</a>
+      </address>          
+  </div>
+	<a href="admin/index.html" > admin </a>
+    <center class="text-muted" style="align:center;">Copyright ©2015 LEARN SMART.</center>
+  </div>
+</div>
+
+</body>
+
+</html>
+
